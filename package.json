@@ -1,0 +1,20 @@
+{
+  "name": "4koma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx --watch --inspect node_modules/.bin/functions-framework --target=helloGET --source=./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.4",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2"
+  }
+}
