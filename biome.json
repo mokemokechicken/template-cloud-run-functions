@@ -4,7 +4,14 @@
 		"formatter": {
 			"enabled": true,
 			"indentWidth": 2
+		},
+		"parser": {
+			"allowComments": true,
+			"allowTrailingCommas": false
 		}
+	},
+	"files": {
+		"include": ["**/*.json", "*.json"]
 	},
 	"linter": {
 		"rules": {
