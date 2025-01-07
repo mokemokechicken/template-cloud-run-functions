@@ -25,9 +25,12 @@ docker-run:
 	docker run -p 8080:8080 gcr.io/$(PROJECT_ID)/hello-world
 
 # Cloud Runへのデプロイ
-deploy:
+deploy: .env.gcloud.yml
 	@echo "🚀 Deploying to Cloud Run..."
 	gcloud builds submit --config cloudbuild.yaml
+
+.env.gcloud.yml:
+	make init-env
 
 # 環境変数ファイルの作成
 init-env:
