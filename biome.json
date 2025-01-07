@@ -1,0 +1,24 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"json": {
+		"formatter": {
+			"enabled": true,
+			"indentWidth": 2
+		}
+	},
+	"linter": {
+		"rules": {
+			"style": {
+				"useSingleVarDeclarator": "off",
+				"noUselessElse": "off"
+			},
+			"suspicious": {
+				"noImplicitAnyLet": "off",
+				"noExplicitAny": "off"
+			},
+			"complexity": {
+				"noForEach": "off"
+			}
+		}
+	}
+}

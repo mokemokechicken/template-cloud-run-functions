@@ -1,5 +1,9 @@
 {
     "recommendations": [
-        "biomejs.biome"
+        "biomejs.biome",
+        "saoudrizwan.claude-dev",
+        "ms-vsliveshare.vsliveshare",
+        "mhutchie.git-graph",
+        "tamasfe.even-better-toml"
     ]
 }
