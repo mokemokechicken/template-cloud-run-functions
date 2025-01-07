@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "tsx --watch --inspect node_modules/.bin/functions-framework --target=helloGET --source=./src/index.ts",
+    "format": "biome format --write .",
     "test": "npm run lint && echo \"No tests yet\"",
     "lint": "biome lint ."
   },
