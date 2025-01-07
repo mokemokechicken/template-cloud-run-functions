@@ -1,5 +1,12 @@
-import type { HttpFunction } from "@google-cloud/functions-framework";
+import express from "express";
 
-export const helloGET: HttpFunction = (req, res) => {
+const app = express();
+const port = process.env.PORT || 8080;
+
+app.get("/", (req, res) => {
   res.send("Hello, World!");
-};
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
