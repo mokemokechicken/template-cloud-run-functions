@@ -1,21 +1,19 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+
   "formatter": {
     "enabled": true,
     "indentWidth": 2,
-    "indentStyle": "space",
-    "lineWidth": 120
+    "indentStyle": "space"
   },
+
   "json": {
     "parser": {
       "allowComments": true,
       "allowTrailingCommas": false
     }
   },
-  "files": {
-    "ignore": ["node_modules", "dist"],
-    "include": ["src/**/*.ts", "**/*.json"]
-  },
+
   "linter": {
     "rules": {
       "style": {
@@ -30,5 +28,11 @@
         "noForEach": "off"
       }
     }
+  },
+
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
   }
 }
