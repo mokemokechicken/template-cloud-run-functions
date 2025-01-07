@@ -1,25 +1,23 @@
 {
-	"name": "your-project-name",
-	"version": "1.0.0",
-	"main": "index.js",
-	"scripts": {
-		"build": "tsc",
-		"start": "tsx --watch --inspect node_modules/.bin/functions-framework --target=helloGET --source=./src/index.ts",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"format": "biome format --write .",
-		"lint": "biome lint .",
-		"check": "biome check --apply ."
-	},
-	"author": "",
-	"license": "ISC",
-	"description": "",
-	"dependencies": {
-		"@google-cloud/functions-framework": "^3.4.4",
-		"typescript": "^5.7.2"
-	},
-	"devDependencies": {
-		"@types/node": "^22.10.2",
-		"@biomejs/biome": "1.9.4",
-		"tsx": "^4.19.2"
-	}
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx --watch --inspect node_modules/.bin/functions-framework --target=helloGET --source=./src/index.ts",
+    "test": "npm run lint && echo \"No tests yet\"",
+    "lint": "biome lint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.4",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@biomejs/biome": "1.9.4",
+    "tsx": "^4.19.2"
+  }
 }

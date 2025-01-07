@@ -1,31 +1,34 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-	"json": {
-		"formatter": {
-			"enabled": true,
-			"indentWidth": 2
-		},
-		"parser": {
-			"allowComments": true,
-			"allowTrailingCommas": false
-		}
-	},
-	"files": {
-		"include": ["**/*.json", "*.json"]
-	},
-	"linter": {
-		"rules": {
-			"style": {
-				"useSingleVarDeclarator": "off",
-				"noUselessElse": "off"
-			},
-			"suspicious": {
-				"noImplicitAnyLet": "off",
-				"noExplicitAny": "off"
-			},
-			"complexity": {
-				"noForEach": "off"
-			}
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "formatter": {
+    "enabled": true,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "json": {
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": false
+    }
+  },
+  "files": {
+    "ignore": ["node_modules", "dist"],
+    "include": ["src/**/*.ts", "**/*.json"]
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "useSingleVarDeclarator": "off",
+        "noUselessElse": "off"
+      },
+      "suspicious": {
+        "noImplicitAnyLet": "off",
+        "noExplicitAny": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
+    }
+  }
 }

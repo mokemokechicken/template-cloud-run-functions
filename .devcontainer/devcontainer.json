@@ -1,32 +1,30 @@
 {
-	// https://containers.dev/implementors/json_reference/
-	"name": "ts-dev-container",
-	"build": {
-		"dockerfile": "./Dockerfile",
-		"context": ".."
-	},
-	"features": {
-		// https://containers.dev/features
-		"ghcr.io/devcontainers/features/git:1": {},
-		"ghcr.io/devcontainers/features/sshd:1": {},
-		"ghcr.io/devcontainers/features/aws-cli:1": {},
-		"ghcr.io/dhoeric/features/google-cloud-cli:1": {},
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"installZsh": true,
-			"upgradePackages": true,
-			"username": "automatic"
-		},
-		"ghcr.io/christophermacgown/devcontainer-features/direnv:1": {},
-		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"streetsidesoftware.code-spell-checker"
-			],
-			"settings": {}
-		}
-	},
-	"postCreateCommand": "bash .devcontainer/scripts/onPostCreate.sh",
-	"postStartCommand": "bash .devcontainer/scripts/onPostStart.sh"
+  // https://containers.dev/implementors/json_reference/
+  "name": "ts-dev-container",
+  "build": {
+    "dockerfile": "./Dockerfile",
+    "context": ".."
+  },
+  "features": {
+    // https://containers.dev/features
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/dhoeric/features/google-cloud-cli:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "upgradePackages": true,
+      "username": "automatic"
+    },
+    "ghcr.io/christophermacgown/devcontainer-features/direnv:1": {},
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["streetsidesoftware.code-spell-checker"],
+      "settings": {}
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/scripts/onPostCreate.sh",
+  "postStartCommand": "bash .devcontainer/scripts/onPostStart.sh"
 }
