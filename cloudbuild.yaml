@@ -23,4 +23,4 @@ steps:
       - --entry-point=helloGET
       - --trigger-http
       - --allow-unauthenticated
-      - --env-vars-file=env.gcloud.yml
+      - --env-vars-file=.env.gcloud.yml
