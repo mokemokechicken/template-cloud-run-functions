@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsx --watch --inspect node_modules/.bin/functions-framework --target=helloGET --source=./src/index.ts",
+    "start": "tsx --watch src/index.ts",
+    "start:prod": "node dist/index.js",
     "format": "biome format --write .",
     "test": "npm run lint && echo \"No tests yet\"",
     "lint": "biome lint ."
